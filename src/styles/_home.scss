@@ -6,12 +6,11 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 4rem;
     max-width: 1200px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    padding: 4rem 4rem;
+    padding: 2rem 4rem;
     h1{
       font-size: 32px;
       font-weight: 700;
@@ -26,26 +25,31 @@
         color: #fff;
         border-radius: 100px;
         cursor: pointer;
+        transition: all 0.2s ease;
+          &:hover {
+            // 호버시 백그라운드와 폰트 색상 반전색상으로 변경
+            // 애니메이션 추가
+            background-color: #fff;
+            color: $primary-color;
+            transition: all 0.2s ease;
+        }
       }
   }
   .top-content-section {
     width: 100%;
-    height: 100vh;
+    min-height: calc(100vh - 84px); // 헤더 높이(padding 포함)를 뺀 높이
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    padding: 2rem 0; // 상하 여백 추가
     .top-content-wrapper{
       width: 100%;
       max-width: 1200px;
-      padding-left: 2rem;
-      padding-right: 2rem;
-
+      padding: 0 2rem;
       @media (max-width: 600px) {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 0 1rem;
       }
       margin: 0 auto;
-      padding-top: 11rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -64,9 +68,10 @@
         line-height: 100%;
       }
       .top-content-discription {
-        font-size: 18px;
-        color: #000;
+        font-size: 20px;
+        color: $main-dark;
         text-align: center;
+        font-weight: 500;
       }
       .top-content-button {
         // 동그란 모양의 버튼
