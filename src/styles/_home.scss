@@ -6,7 +6,7 @@
     align-items: center;
     height: 4rem;
     width: 100%;
-    background-color: #f0f0f0; // 임시 영역 확인 용
+    background-color: $main-light; // 임시 영역 확인 용
     font-size: 32px;
     padding: 4rem 0;
   }
@@ -34,6 +34,7 @@
       justify-content: center;
       gap: 4rem;
       .top-content-sub-title {
+        color: $primary-color;
         font-size: 18px;
       }
       .top-content-title{

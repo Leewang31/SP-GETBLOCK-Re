@@ -18,7 +18,7 @@ export default defineComponent({
     <section class="top-content-section">
       <div class="top-content-wrapper">
         <div class="top-content-sub-title">
-          <p>Get smart Get block</p>
+          <p>Get smart • Get block</p>
         </div>
         <div class="top-content-title">
           <p>What is Getblock?</p>
