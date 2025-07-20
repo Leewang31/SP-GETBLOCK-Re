@@ -12,8 +12,11 @@ export default defineComponent({
 
 <template>
   <div class="home">
-    <section class="logo-section">
+    <section class="header-section">
       <h1>GETBLOCK</h1>
+      <button class="header-button">
+        <p>Contact Us</p>
+      </button>
     </section>
     <section class="top-content-section">
       <div class="top-content-wrapper">
