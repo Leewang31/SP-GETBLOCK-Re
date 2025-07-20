@@ -1,0 +1,70 @@
+/* Home styles */
+.home {
+  .logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: #f0f0f0; // 임시 영역 확인 용
+    font-size: 32px;
+    padding: 4rem 0;
+  }
+  .top-content-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .top-content-wrapper{
+      width: 100%;
+      max-width: 1200px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+      @media (max-width: 600px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      margin: 0 auto;
+      padding-top: 11rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      .top-content-sub-title {
+        font-size: 18px;
+      }
+      .top-content-title{
+        font-size: 48px;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+      }
+      .top-content-discription {
+        font-size: 18px;
+        color: #000;
+        text-align: center;
+      }
+      .top-content-button {
+        // 동그란 모양의 버튼
+        padding: 1rem 2rem;
+        font-size: 20px;
+        background-color: #000;
+        border: 1px solid #000;
+        color: #fff;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          // 호버시 백그라운드와 폰트 색상 반전색상으로 변경
+          // 애니메이션 추가
+          background-color: #fff;
+          color: #000;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}

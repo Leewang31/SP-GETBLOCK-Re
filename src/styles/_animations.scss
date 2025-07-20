@@ -1,0 +1,50 @@
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn $transition-normal forwards;
+}
+
+.slide-up {
+  animation: slideUp $transition-normal forwards;
+}
+
+.slide-in {
+  animation: slideIn $transition-normal forwards;
+}
+
+// Stagger animations
+@for $i from 1 through 10 {
+  .stagger-#{$i} {
+    animation-delay: $i * 0.1s;
+  }
+} 
