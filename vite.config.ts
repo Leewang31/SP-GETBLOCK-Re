@@ -9,4 +9,14 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/styles/_variables.scss";`
+      }
+    }
+  },
+  server: {
+    port: 4000
+  }
 })
